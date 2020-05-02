@@ -1,6 +1,13 @@
 # coursera-ml-andrew-ng
 
-## week 1
+## Prerequisites
+
+1. [GNU Octave](https://www.gnu.org/software/octave/) installed
+
+## Usage
+1. Clone the repo
+
+## Content
 
 ### Intro
 
@@ -19,4 +26,42 @@
 
 1. Model Representation
     - What the overall process of supervised learning looks like?
-        - Example: Linear regression algorithm
+        - Example: "Linear regression" algorithm
+        - Hypothesis Function - h(x)
+        - Cost Function - J(θ1, θ2)
+
+### Parameter Learning
+- "Gradient descent" algorithm
+
+### Multivariate Linear Regression
+- feature scaling
+- mean normalization
+- Learning Rate (α)
+
+### Normal Equation
+
+Normal Equation allows to find the optimum theta without iteration.
+
+Formula: θ = (Xtr * X)−1 * Xtr * y
+
+Comparison of 2 algorithms:
+
+**Gradient Descent**
+
+cons:
+- Need to choose alpha
+- Needs many iterations
+
+Pros:
+- low complexity: O(k * n^2)
+- Works well when n is large
+
+**Normal Equation**
+
+Pros:
+- No need to choose alpha
+- No need to iterate
+
+Cons:
+- high complexity (O(n^3)) to calculate inverse of (Xtr * X)
+- Slow if n is very large (more than 10 ^4)
