@@ -12,6 +12,8 @@ A = [];
 
 
 
+% 1 Simple Octave/MATLAB function
+A = eye(5)
 
 
 

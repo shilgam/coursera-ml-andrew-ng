@@ -86,6 +86,7 @@ fprintf(' -3.6303\n  1.1664\n\n');
 hold on; % keep previous plot visible
 plot(X(:,2), X*theta, '-')
 legend('Training data', 'Linear regression')
+print ("../output/data1_with_fit.png");
 hold off % don't overlay any more plots on this figure
 
 % Predict values for population sizes of 35,000 and 70,000
@@ -125,11 +126,15 @@ J_vals = J_vals';
 figure;
 surf(theta0_vals, theta1_vals, J_vals)
 xlabel('\theta_0'); ylabel('\theta_1');
+title ('J(\theta). Surface plot');
+print ("../output/data1_Cost_func_Surface_plot.png");
 
 % Contour plot
 figure;
 % Plot J_vals as 15 contours spaced logarithmically between 0.01 and 100
 contour(theta0_vals, theta1_vals, J_vals, logspace(-2, 3, 20))
 xlabel('\theta_0'); ylabel('\theta_1');
+title ('J(\theta). Contour plot');
 hold on;
 plot(theta(1), theta(2), 'rx', 'MarkerSize', 10, 'LineWidth', 2);
+print ("../output/data1_Cost_func_Contour_plot.png");

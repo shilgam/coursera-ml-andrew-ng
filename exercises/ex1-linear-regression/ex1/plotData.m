@@ -18,6 +18,12 @@ figure; % open a new figure window
 
 
 
+% 2.1 Plotting the Data
+plot(x, y, 'rx', 'MarkerSize', 3);
+ylabel('Profit in $10,000s');
+xlabel('Population of City in 10,000s');
+
+print ("../output/data1.png");
 
 
 % ============================================================

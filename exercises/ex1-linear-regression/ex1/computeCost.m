@@ -14,6 +14,8 @@ J = 0;
 %               You should set J to the cost.
 
 
+% 2.2.3 Computing the cost J(θ)
+J = 1 / (2 * m) * sum((X * theta - y) .^ 2);
 
 
 
