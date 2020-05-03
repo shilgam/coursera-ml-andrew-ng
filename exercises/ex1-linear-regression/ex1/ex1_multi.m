@@ -46,6 +46,21 @@ fprintf(' x = [%.0f %.0f], y = %.0f \n', [X(1:10,:) y(1:10,:)]');
 fprintf('Program paused. Press enter to continue.\n');
 pause;
 
+
+% Plot data points
+plot(X(:, 1), y, 'rx', 'MarkerSize', 3);
+ylabel('Price');
+xlabel('Size of the house (in square feet)');
+title ('Price dependence on the size of the house');
+print ("../output/data2_price_dependence_on_size.png");
+
+plot(X(:, 2), y, 'rx', 'MarkerSize', 3);
+ylabel('Price in $10,000s');
+xlabel('Number of bedrooms');
+title ('Price dependence on number of bedrooms');
+print ("../output/data2_price_dependence_on_num_of_bedrooms.png");
+
+
 % Scale features and set them to zero mean
 fprintf('Normalizing Features ...\n');
 

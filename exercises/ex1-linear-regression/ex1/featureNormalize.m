@@ -28,8 +28,10 @@ sigma = zeros(1, size(X, 2));
 
 
 
-
-
+% 3.1 Feature Normalization
+mu = mean(X);
+sigma = std(X);
+X_norm = (X - mu) ./ sigma;
 
 
 

@@ -14,7 +14,8 @@ J = 0;
 %               You should set J to the cost.
 
 
-
+% same as for case with single variable
+J = 1 / (2 * m) * sum((X * theta - y) .^ 2);
 
 
 % =========================================================================

@@ -20,8 +20,8 @@ for iter = 1:num_iters
 
 
 
-
-
+    % same as for case with single variable
+    theta = theta - alpha / m * (sum((X * theta - y) .* X))';
 
 
 
@@ -33,5 +33,14 @@ for iter = 1:num_iters
     J_history(iter) = computeCostMulti(X, y, theta);
 
 end
+
+figure;
+iter_axis = 1:num_iters;
+plot(iter_axis, J_history, 'rx', 'MarkerSize', 3);
+ylabel('J(\theta)');
+xlabel('Number of iterations');
+title ('Value of cost function in each iteration');
+print ("../output/data2_cost_fuction_history.png");
+close;
 
 end
