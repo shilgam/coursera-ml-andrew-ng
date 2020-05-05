@@ -21,7 +21,7 @@ for iter = 1:num_iters
 
 
     % same as for case with single variable
-    theta = theta - alpha / m * (sum((X * theta - y) .* X))';
+    theta = theta - alpha / m * X' * (X * theta - y);
 
 
 
