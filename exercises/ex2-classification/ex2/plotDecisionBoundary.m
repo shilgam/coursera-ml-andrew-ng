@@ -21,7 +21,7 @@ if size(X, 2) <= 3
 
     % Plot, and adjust axes for better viewing
     plot(plot_x, plot_y)
-    
+
     % Legend, specific for the exercise
     legend('Admitted', 'Not admitted', 'Decision Boundary')
     axis([30, 100, 30, 100])
@@ -44,5 +44,7 @@ else
     contour(u, v, z, [0, 0], 'LineWidth', 2)
 end
 hold off
+
+print ("../output/p1.3_plot_decision_boundary.png");
 
 end
