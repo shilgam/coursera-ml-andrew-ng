@@ -27,7 +27,7 @@ clear ; close all; clc
 data = load('ex2data2.txt');
 X = data(:, [1, 2]); y = data(:, 3);
 
-plotData(X, y);
+plotData2(X, y);
 
 % Put some labels
 hold on;
@@ -127,6 +127,7 @@ ylabel('Microchip Test 2')
 
 legend('y = 1', 'y = 0', 'Decision boundary')
 hold off;
+print ("../output/p2.3_plot_decision_boundary.png");
 
 % Compute accuracy on our training set
 p = predict(theta, X);

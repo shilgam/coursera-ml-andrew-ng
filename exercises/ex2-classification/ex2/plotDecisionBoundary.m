@@ -45,6 +45,4 @@ else
 end
 hold off
 
-print ("../output/p1.3_plot_decision_boundary.png");
-
 end

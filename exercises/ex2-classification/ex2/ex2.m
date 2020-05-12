@@ -108,6 +108,7 @@ fprintf(' -25.161\n 0.206\n 0.201\n');
 
 % Plot Boundary
 plotDecisionBoundary(theta, X, y);
+print ("../output/p1.3_plot_decision_boundary.png");
 
 % Put some labels
 hold on;
