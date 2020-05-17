@@ -40,6 +40,7 @@ rand_indices = randperm(m);
 sel = X(rand_indices(1:100), :);
 
 displayData(sel);
+print ("../output/p1_data1_points_random.png");
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;

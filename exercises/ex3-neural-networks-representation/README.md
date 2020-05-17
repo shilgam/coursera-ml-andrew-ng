@@ -41,3 +41,13 @@ if you want to mimic the brain it seems like you have to write lots of different
 ### Examples and Intuitions
 
 ### Multiclass Classification
+
+## Exercise #3
+
+Part 1. Implement multi-class logistic regression to recognize handwritten digits.
+
+Cons:
+- logistic regression cannot form more complex hypotheses as it is only a linear classifier
+- You could add more features (such as polynomial features) to logistic regression, but that can be very expensive to train
+
+Part 2. Implement a neural network to recognize handwritten digits.
